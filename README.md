@@ -3,7 +3,7 @@
 
 <p align="center"><a href="https://jordanruan.github.io/bolhadev/" >Finalizado 🚀</a><p>
 
-![banner](https://github.com/jordanruan/bolhadev/blob/master/assets/mockup%20desktop.png?raw=true)
+![banner](https://github.com/jordanruan/matematicadivertida/blob/main/assets/mockup-desktop.png?raw=true)
 
 ---
 

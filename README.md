@@ -9,7 +9,7 @@
 
 ## SoulCode Challenge 💡
 
-Desafio de HTML & CSS proposto pela <strong>Soul Code</strong>, EDTECH brasileira com <i>inclusão social.</i>
+Desafio de HTML, CSS , JAVASCRIPT , JQUERY  proposto pela <strong>Soul Code</strong>, EDTECH brasileira com <i>inclusão social.</i>
 
 - <a href="https://soulcodeacademy.org/">SoulCode</a>
 

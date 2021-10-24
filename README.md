@@ -20,12 +20,11 @@ Desafio de HTML & CSS proposto pela <strong>Soul Code</strong>, EDTECH brasileir
 
 ---
 
-## Author 👨‍💻
+## Authors 👨‍💻
 
-- Email: jordanruan@hotmail.com
 - GitHub: [@jordanruan](https://github.com/jordanruan)
-- LinkedIn: [@jordanruan](https://linkedin.com/in/jordanruan)
-
+- [@Rodolpho](https://github.com/RudyAlmeida)
+- [@Ana Karolina](https://github.com/akarolinada)
 ---
 
-Copyright - 2021 Jordan Ruan | DevChallenge
+Copyright - 2021 Rods, Jordan, Ana Karolina | SoulCode Challenge

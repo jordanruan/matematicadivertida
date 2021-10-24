@@ -17,6 +17,8 @@ Desafio de HTML & CSS proposto pela <strong>Soul Code</strong>, EDTECH brasileir
 
 - HTML5
 - CSS
+- JAVASCRIPT
+- JQUERY 
 
 ---
 

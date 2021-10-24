@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aplica Matématica</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="/js/script.js"></script>
 </head>
 
 <body>
@@ -14,35 +16,134 @@
     <section class="menu">
         <nav class="navbar container">
             <div class="logo">
-                <a href="">LOGO</div></a>
-                <ul class="site-navigation">
-                    <li class="nav-links"><a href="../index.html">Inicio</a></li>
-                    <li class="nav-links"><a href="./calc.html">Calculdora</a></li>
-                    <li class="nav-links"><a href="./exe.html">Exercicios</a></li>
-                    <div>
-                        <li class="nav-links">
-                            <a href="/pages/login.html" class="btn-login">Cadastre-se</a>
-                        </li>
-                    </div>
-                </ul>
+                <a href="">LOGOooo
+            </div></a>
+            <ul class="site-navigation">
+                <li class="nav-links"><a href="../index.html">Inicio</a></li>
+                <li class="nav-links"><a href="./calc.html">Calculdora</a></li>
+                <li class="nav-links"><a href="./exe.html">Exercicios</a></li>
+                <div>
+                    <li class="nav-links">
+                        <a href="/pages/login.html" class="btn-login">Cadastre-se</a>
+                    </li>
+                </div>
+            </ul>
         </nav>
     </section>
 
+    <body>
+        <header>
+            <h1>Exercícios</h1>
+        </header>
+        <main>
+            <section class="titulo">
+                <div class="cont-desafios">
+                    <div class="desafios">1. Faça uma soma que resulte em 8.</div>
+                    <div class="desafios" id="grid0"></div>
+                    <div class="desafios">2. Faça uma subtração que reuslte em 13.</div>
+                    <div class="desafios" id="grid1"></div>
+                    <div class="desafios">3. Faça multiplicação que resulte em 36.</div>
+                    <div class="desafios" id="grid2"></div>
+                    <div class="desafios">4. Faça uma divisão que resulte em 2.</div>
+                    <div class="desafios" id="grid3"></div>
+
+                </div>
+
+                <div class="desempenho">
+
+                </div>
+
+            </section>
+
+            <section class="card">
+                <div class="linhaDeInput">
+                    <label>Valor 1:</label>
+                    <input type="number" id="inputUm" placeholder="Digite o primeiro valor"></input>
+                </div>
+                <div class="linhaDeInput">
+                    <label id="label-op">Operador:</label>
+                    <select id="operador">
+                        <option value=""></option>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">&#215;</option>
+                        <option value="/">&#247;</option>
+                    </select>
+                </div>
+                <div class="linhaDeInput">
+                    <label>Valor 2:</label>
+                    <input type="number" id="inputDois" placeholder="Digite o segundo valor"></input>
+                </div>
+                <button onclick="resposta.salvar()" id="btn1">Responder</button>
+                <button onclick="resposta.cancelar()">Cancelar</button>
+            </section>
+            <section class="conteudo">
+                <table border=1>
+                    <thead>
+                        <th class="center">ID</th>
+                        <th>Valor 1</th>
+                        <th>Operador</th>
+                        <th>Valor 2</th>
+                        <th>Resultado</th>
+                        <th>Açoes</th>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <section class="rodape">
+            <footer class="container">
+                <article>
+                    <a href="#" class="logo-footer">
+                        <img src="https://img.icons8.com/color-glass/48/000000/idea.png" />
+
+                    </a>
+                </article>
+                <article>
+                    <h3>Endereço</h3>
+                    <p class="desc-footer">SoulCode BCW7 2021 ✨</p>
+                </article>
+                <article>
+                    <h3>Redes Sociais</h3>
+                    <ul class="navigation-footer">
+                        <li>
+                            <a href="#" class="custom-icon">
+                                <img src="/assets/instagram (1).svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="custom-icon">
+                                <img src="/assets/facebook (2).svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="custom-icon">
+                                <img src="/assets/linkedin.svg">
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+            </footer>
 
 
 
 
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
-    </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
 
-</body>
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                    <div class="vw-plugin-top-wrapper"></div>
+                </div>
+            </div>
+
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+
+    </body>
 
 </html>

@@ -23,8 +23,8 @@ Desafio de HTML & CSS proposto pela <strong>Soul Code</strong>, EDTECH brasileir
 ## Authors 👨‍💻
 
 - GitHub: [@jordanruan](https://github.com/jordanruan)
-- [@Rodolpho](https://github.com/RudyAlmeida)
-- [@Ana Karolina](https://github.com/akarolinada)
+- GitHub: [@Rodolpho](https://github.com/RudyAlmeida)
+- GitHub: [@Ana Karolina](https://github.com/akarolinada)
 ---
 
 Copyright - 2021 Rods, Jordan, Ana Karolina | SoulCode Challenge

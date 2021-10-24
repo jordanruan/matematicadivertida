@@ -1,7 +1,7 @@
 /* Estilos para o Card externo */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 90%;
+    width: 40%;
     margin: auto;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -53,8 +53,7 @@ label {
 h1, h2, h3 {
     color: #991717;
 }
-#pButton{
-    border-style: dotted;
+#pButton{    
     display: flex;
     margin: auto;
     justify-content: center;
@@ -62,19 +61,19 @@ h1, h2, h3 {
 
 #confirmaCpf{
     display: none;
-    width: 300px;
-    height: 100px;
+    width: 500px;
+    height: 150px;
     background-color:#ffffff;
     position: absolute;
     margin: auto;
     border: double;
     border-radius: 5px;
+    box-sizing: border-box;
 }
-#cabecalhoAviso{
-    text-align: center;
+#cabecalhoAviso{  
     color: #000;
-    margin-top: 0;
-    align-content: center;
+    margin-top: 0;  
+    float: left;
 }
 #caixaAviso{
     background-color: #ffffff;
@@ -84,6 +83,12 @@ h1, h2, h3 {
     border-radius: 5px;
     background-color: black;
     color: #ffffff;
-    margin-top: 42px;
     margin-right: 2px;
+    margin-bottom: 0;
+    margin-top: 120px;
+    z-index: 2;
+
+
+    
+    
 }

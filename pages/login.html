@@ -58,10 +58,21 @@
                 <label for="tel">Telefone: </label>
                 <input type="tel" id="tel" placeholder="Digite seu telefone">
             </p>
-            <p>
-                <label for="date">Data de nascimento:</label>
-                <input type="date" id="date">
+            <p>                
+                <label for="date">Data de nascimento:</label>                
+                <input type="date" id="date"> 
+                <label for="genero">Gênero</label>
+                <select name="genero" id="genero">
+                    <option value=""></option>
+                    <option value="Cis Masculino">Cis Masculino</option>
+                    <option value="Cis Feminino">Cis Feminino</option>
+                    <option value="Trans Feminino">Trans Feminino</option>
+                    <option value="Trans Mascullino">Trans Masculino</option>
+                    <option value="Não-binário">Não-binário</option>
+                    <option value="Outros">Outros</option>
+                </select>
             </p>
+        
             <p><label for="cep">CEP:</label>
                 <input type="text" id="cep" maxlength="9" onblur="consultaCep();">
             </p>
@@ -92,6 +103,10 @@
             <p>
                 <label for="passwordCheck">Repita sua senha:</label>
                 <input type="password" id="passwordCheck">
+            </p>
+            <p>
+                <label for="Mensagem">Comentário:</label>
+                <textarea name="" id="comentario"></textarea>
             </p>
             <p id="pButton">
                 <button type="submit">Enviar</button>

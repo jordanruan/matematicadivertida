@@ -91,6 +91,7 @@ function elevado2() {
 }
 $('#switch-shadow').click(function(){
 	if($("#switch-shadow").is(":checked")){
+		$("#switchText").text("Científica")
 		$('#elevado3').attr("disabled", false)
 		$('#elevado3').click(function(){
 			elevado3();
@@ -104,9 +105,13 @@ $('#switch-shadow').click(function(){
 			raizQuadrada();
 		})
 	}else{
+		$("#switchText").text("Normal")
 		$('#elevado3').attr("disabled", true)
+		$('#elevado3').unbind("onclick")		
 		$('#elevado2').attr("disabled", true)
+		$('#elevado2').unbind("onclick")
 		$('#raizQuadrada').attr("disabled", true)
+		$('#raizQuadrada').unbind("onclick")
 		limpar();
 	}
 	

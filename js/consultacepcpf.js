@@ -1,9 +1,31 @@
 const salvarDados = [];
+$('#date').change(function(){
+    var dataDigitada = document.getElementById('date').value;
+    var dataMax = '2021-03-16';
+    var dataMin = '1981-03-16';
+    if ( dataDigitada  >= dataMax ){        
+        $('#cabecalhoAviso').text("Você é muito novo para estar aqui");
+        $('#confirmaCpf').css({display: "block"});
+        $('#date').val('');
+        return false;
+    }else if (dataDigitada <= dataMin){        
+        $('#cabecalhoAviso').text("Você é um vampiro?");
+        $('#confirmaCpf').css({display: "block"});
+        $('#date').val('');
+        return false;
+    }
+    return true;
+})
 /* função para checar os campos do e-mail conforme aprendido na aula */
 function enviardados() {
     if (document.cadastro.nome.value.length < 3) {
         alert("Preencha o nome corretamente");
         document.cadastro.nome.focus()
+        return false;
+    }
+    if (document.cadastro.cpf.value.length < 11) {
+        alert("Preencha o CPF corretamente");
+        document.cadastro.cpf.focus()
         return false;
     }
     if (document.cadastro.email.value.length < 3) {
@@ -21,6 +43,17 @@ function enviardados() {
         document.cadastro.date.focus()
         return false;
     }
+    if (document.cadastro.genero.value == "") {
+        alert("Preencha corretamente seu Gênero");
+        document.cadastro.genero.focus()
+        return false;
+    }
+
+    if (document.cadastro.cep.value <8) {
+        alert("Preencha corretamente seu CEP");
+        document.cadastro.cep.focus()
+        return false;
+    }
     if (document.cadastro.numero.value.length < 1) {
         alert("Preencha o número da sua residencia corretamente");
         document.cadastro.numero.focus()
@@ -28,23 +61,29 @@ function enviardados() {
     }
     if (document.cadastro.password.value.length < 6) {
         alert("Escolha uma senha com no minimo 6 digitos");
-        document.cadastro.numero.focus()
+        document.cadastro.password.focus()
         return false;
     }
     if (document.cadastro.password.value != document.cadastro.passwordCheck.value) {
         alert("Sua senha não confere");
-        document.cadastro.numero.focus()
+        document.cadastro.passwordCheck.focus()
         return false;
     }
-
-    /* tentativas de salvar os dados, precisa de melhoramento, tinha usado tambem Local Storage.
-    Algumas das coisas comentadas funcionam, mas como não vamos apresentar essa parte do projeto, vai ficar parada ate terminarmos a parte de banco de dados, onde podera ser implementada mais eficazmente.*/
+    if (document.cadastro.comentario.value.length < 10) {
+        alert("Digite seu Comentário");
+        document.cadastro.comentario.focus()
+        return false;
+    }
+   
     let formDados = {};
-    formDados = ("nome : " + cadastro.nome.value + ',' + "email : " + cadastro.email.value + ',' + "telefone : " + cadastro.tel.value + ',' + "data : " + cadastro.date.value + ',' + "cep : " + cadastro.cep.value + ',' + "rua : " + cadastro.logradouro.value + ',' + "numero : " + cadastro.numero.value + ',' + "bairro : " + cadastro.bairro.value + ',' + "cidade : " + cadastro.localidade.value + ',' + "estado: " + cadastro.uf.value + ',' + "senha : " + cadastro.password.value);
+    formDados = ("nome : " + cadastro.nome.value + ',' + "email : " + cadastro.email.value + ',' + "telefone : " + cadastro.tel.value + ',' + "data : " + cadastro.date.value + ',' + "genero:" + cadastro.genero.value + "cep : " + cadastro.cep.value + ',' + "rua : " + cadastro.logradouro.value + ',' + "numero : " + cadastro.numero.value + ',' + "bairro : " + cadastro.bairro.value + ',' + "cidade : " + cadastro.localidade.value + ',' + "estado: " + cadastro.uf.value + ',' + "senha : " + cadastro.password.value +"comentario:" + cadastro.comentario.value);
     salvarDados.push(formDados);
     console.log(formDados);
     console.log(salvarDados);
     alert("Dados Enviados")
+    $('#cabecalhoAviso').text('Olá ' + cadastro.nome.value + " o seu login é: " + cadastro.email.value + " e você pode usar " + cadastro.cpf.value + " como senha "), 
+    $('#confirmaCpf').css({display: "block"});   
+    $('#botaoFechar').css({marginTop: "60px"});   
 }
 /* Função para buscar o CEP e colocar de volta nos campos bloqueados do formulario
 função aprendida na sala de aula*/
@@ -76,6 +115,7 @@ function VerificaCPF() {
     if (vercpf(document.cadastro.cpf.value)) { document.cadastro } else {
         errors = "1"; if (errors) {$('#cabecalhoAviso').text('CPF NÃO VÁLIDO'), 
         $('#confirmaCpf').css({display: "block"})};
+        $('#botaoFechar').css({marginTop: "120px"});  
         document.retorno = (errors == '');
     }
 }
@@ -101,7 +141,8 @@ function vercpf(cpf) {
     if (rev != parseInt(cpf.charAt(10)))
         return false; 
         $('#cabecalhoAviso').text('O CPF INFORMADO É VÁLIDO.'), 
-        $('#confirmaCpf').css({display: "block"});   
+        $('#confirmaCpf').css({display: "block"});  
+        $('#botaoFechar').css({marginTop: "120px"});   
       return true;
 }
 function fecharJanela(){

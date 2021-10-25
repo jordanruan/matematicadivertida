@@ -5,7 +5,7 @@
 	font-family: 'Orbitron' , sans-serif ;
 }
 body{
-
+font-size: 100%;
 	display: block;
 	justify-content: center;
 	align-items: center;
@@ -127,4 +127,17 @@ input[type=button] {
 	  font-weight: bold;
 	  font-size: 1vw;
 	  padding-bottom: 10px;
+  }
+  #visionPlus {
+	width: 3%;
+	position:fixed;
+    top:25%;
+    bottom: 75%;
+    left:10px;
+  }#visionMinus {
+	width: 3%;
+	position:fixed;
+    top:30%;
+    bottom: 70%;
+    left:10px;
   }

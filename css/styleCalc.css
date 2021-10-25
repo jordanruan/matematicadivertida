@@ -10,12 +10,29 @@ body{
 	justify-content: center;
 	align-items: center;
 }
+main{
+	margin-top: 2vw;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+}
+#moeda1, #moeda2{
+	border-color: #ED4343;
+	border-radius: 10px;
+	margin: 0.5vw;
+	background-color: #21242C;
+	color: #E9EAEC;
+	height: 2vw;
+	width: 5vw;
+}
 .calculator {
 	width: 245px;
 	margin: auto;
 	background-color: #21242C;
 	padding: 10px;
 	border-radius: 8px;
+	margin-bottom: 3vw;
 }
 
 .tela {

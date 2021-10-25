@@ -116,3 +116,11 @@ $('#switch-shadow').click(function(){
 	}
 	
 })
+$('#visionPlus').click(function(){
+	console.log('click')
+	$('*').css('font-size', '105%');
+})
+$('#visionMinus').click(function(){
+	console.log('click')
+	$('*').css('font-size', '100%');
+})

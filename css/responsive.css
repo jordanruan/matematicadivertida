@@ -1,0 +1,80 @@
+@media (max-width: 765px) {
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #operador {
+        margin-top: 25px;
+    }
+    button {
+        margin-top: 20px;
+        width: 20%;
+    }
+    #btn1 {
+        margin-right: 30px;
+    }
+    .conteudo {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:722px) {
+    .card{
+        width: 90%;
+    }
+}
+
+@media (max-width:642px) {
+    .card{
+        width: 100%;
+    }
+}
+
+@media(max-width: 628px) {
+    .navbar{
+        flex-direction: column;  
+    }         
+}
+
+@media(max-width: 577px){
+    .card{
+      padding: 10px;
+    }
+}
+
+@media(max-width: 557px){
+    .card{
+        padding: 0px;
+    }
+
+}
+
+@media(max-width: 435px){
+    
+}
+
+@media(max-width: 538px) {
+    .nav-links{
+        margin:20px;
+    }
+    
+    input{
+        width: 70%;
+    }
+}
+
+
+
+
+
+
+

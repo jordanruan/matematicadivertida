@@ -5,7 +5,8 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
-body{
+
+body {
     font-size: 100%;
 }
 
@@ -37,6 +38,11 @@ section {
 .site-navigation {
     display: flex;
     align-items: center;
+}
+
+.img-logo {
+    width: 200px;
+    object-fit: cover;
 }
 
 .nav-links {

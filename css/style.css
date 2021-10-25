@@ -286,3 +286,18 @@ footer {
     height: 35px;
     margin-right: 16px;
 }
+#visionPlus {
+	width: 3%;
+	position: fixed;
+	top: 25%;
+	bottom: 75%;
+	left: 10px;
+}
+
+#visionMinus {
+	width: 3%;
+	position: fixed;
+	top: 30%;
+	bottom: 70%;
+	left: 10px;
+}

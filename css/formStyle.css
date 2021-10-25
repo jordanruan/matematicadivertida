@@ -35,7 +35,7 @@ textarea {
 }
 /* Estilos para os botões */
 button[type=submit], button[type=reset] {
-    background-color: #e1be2e;
+    background-color: #ED4343;
     border: none;
     color: white;
     padding: 16px 32px;
@@ -46,12 +46,12 @@ button[type=submit], button[type=reset] {
 }
 
 label {
-    color: #991717;
+    color: #ED4343;
     font-weight: bolder;
     font-size: 100%;
 }
 h1, h2, h3 {
-    color: #991717;
+    color: #ED4343;
 }
 #pButton{    
     display: flex;

@@ -17,6 +17,10 @@ main{
 	justify-content: center;
 	align-items: center;
 }
+#instrucao{
+	line-height: 1.5;
+	margin-bottom: 1vw;
+}
 #moeda1, #moeda2{
 	border-color: #ED4343;
 	border-radius: 10px;
@@ -24,7 +28,7 @@ main{
 	background-color: #21242C;
 	color: #E9EAEC;
 	height: 2vw;
-	width: 5vw;
+	width: 14vw;
 }
 .calculator {
 	width: 245px;

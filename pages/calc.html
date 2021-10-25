@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="../css/styleCalc.css" />
 	<script type="text/Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/calcScript.js" defer></script>
+	<script type="text/javascript" src="../js/cotacao.js" defer></script>
 </head>
 
 <body>
@@ -31,6 +32,23 @@
 			</ul>
 		</nav>
 	</section>
+	<main>
+		<div id="cotacao" style="font-size: 40px;">0.0</div>
+		<select name="moeda1" id="moeda1">
+			<option hidden disabled selected value> Escolha uma moeda </option>
+			<option value="USD">Dolar</option>
+			<option value="EUR">Euro</option>
+			<option value="BRL">Real</option>
+		</select>
+		<select name="moeda2" id="moeda2" onchange="consultaCotação()">
+			<option hidden disabled selected value> Escolha uma moeda </option>
+			<option value="USD">Dolar</option>
+			<option value="GBP">Libra</option>
+			<option value="EUR">Euro</option>
+			<option value="AUD">Dolar Australiano</option>
+			<option value="BRL">Real</option>
+		</select>
+	</main>
 	<div class="switch__container">
 		<div id="switchText">Normal</div>
 		<input id="switch-shadow" class="switch switch--shadow" type="checkbox">

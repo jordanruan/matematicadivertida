@@ -102,8 +102,35 @@ section {
 
 /* Home */
 
+.bk-home {
+    background-image: url(../assets/home-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.homezao .shape {
+    position: absolute;
+    bottom: -2rem;
+    height: 10rem;
+    width: 100%;
+    background: url(../assets/shape.png);
+    block-size: 100rem 15rem;
+    filter: drop-shadow(0 -.1rem .1rem rgba(0, 0, 0, .2));
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0rem;
+    }
+    100% {
+        background-position-x: 100rem;
+    }
+}
+
 .home {
-    height: 100vh;
+    min-height: 80vh;
 }
 
 .home-text span {

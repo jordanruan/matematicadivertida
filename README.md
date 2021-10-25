@@ -27,7 +27,6 @@ Desafio de HTML, CSS , JAVASCRIPT , JQUERY  proposto pela <strong>Soul Code</str
 - GitHub: [@jordanruan](https://github.com/jordanruan)
 - GitHub: [@Rodolpho](https://github.com/RudyAlmeida)
 - GitHub: [@Ana Karolina](https://github.com/akarolinada)
-- GitHub: [@Anderson Calvacante](https://github.com/AndersonCavalcant)
 ---
 
-Copyright - 2021 Rods, Jordan, Ana Karolina, Anderson Calvacante | SoulCode Challenge
+Copyright - 2021 Rods, Jordan, Ana Karolina | SoulCode Challenge

@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aplica Matématica</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/styleCalc.css" />
-    <script type="text/Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script type="text/javascript" src="../js/calcScript.js" defer></script>
 </head>
 
 <body>
@@ -30,50 +27,7 @@
                 </ul>
         </nav>
     </section>
-    <div class="switch__container">
-		<div id="switchText">Normal</div>
-		<input id="switch-shadow" class="switch switch--shadow" type="checkbox">
-		<label for="switch-shadow"></label>
-	  </div>
-	<div class="calculator">
-		
-		<input class="tela">
-		
-		<table>
 
-			<tr>
-				<td><input type="button" value="C" onclick="limpar()" id="c1"></td>
-				<td><input type="button" value="<" onclick="apagarUltimo()"></td>
-				<td><input type="button" value="/" onclick="inserirNumero('/')"></td>
-				<td><input type="button" value="x" onclick="inserirNumero('*')"></td>
-				<td><input type="button" value="x&sup3;" id="elevado3" disabled></td>
-			</tr>
-			<tr>
-				<td><input type="button" value="7" onclick="inserirNumero(7)"></td>
-				<td><input type="button" value="8" onclick="inserirNumero(8)"></td>
-				<td><input type="button" value="9" onclick="inserirNumero(9)"></td>
-				<td><input type="button" value="-" onclick="inserirNumero('-')"></td>
-				<td><input type="button" value="x&sup2;" id="elevado2" disabled></td>
-			</tr>
-			<tr>
-				<td><input type="button" value="4" onclick="inserirNumero(4)"></td>
-				<td><input type="button" value="5" onclick="inserirNumero(5)"></td>
-				<td><input type="button" value="6" onclick="inserirNumero(6)"></td>
-				<td><input type="button" value="+" onclick="inserirNumero('+')"></td>
-				<td><input type="button" value="&radic;2" id="raizQuadrada" disabled></td>
-			</tr>
-			<tr>
-				<td><input type="button" value="1" onclick="inserirNumero(1)"></td>
-				<td><input type="button" value="2" onclick="inserirNumero(2)"></td>
-				<td><input type="button" value="3" onclick="inserirNumero(3)"></td>
-				<td rowspan=2 colspan="2"><input type="button" value="=" onclick="resultado()" id="confirma" "></td>
-			</tr>
-			<tr>
-				<td colspan=" 2"><input type="button" value="0" onclick="inserirNumero(0)" id="numero0"></td>
-				<td><input type="button" value="." onclick="inserirNumero('.')"></td>
-			</tr>
-		</table>
-	</div>
 
 
 

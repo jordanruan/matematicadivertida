@@ -24,8 +24,11 @@
                 <li class="nav-links"><a href="../index.html">Inicio</a></li>
                 <li class="nav-links"><a href="./calc.html">Calculdora</a></li>
                 <li class="nav-links"><a href="./exe.html">Exercicios</a></li>
-                <li class="nav-links"><a href="/pages/login.html" class="btn-login">Cadastre-se</a></li>
-
+                <div>
+                    <li class="nav-links">
+                        <a href="./login.html" class="btn-login">Cadastre-se</a>
+                    </li>
+                </div>
             </ul>
         </nav>
     </section>
@@ -35,19 +38,19 @@
             <div class="vw-plugin-top-wrapper"></div>
         </div>
     </div>
-    
+
     <section>
         <main class="home container">
             <div class="home-text">
                 <h1 class="titulo-home">
                     <span>Exercício</span>
-                </h1>                
+                </h1>
             </div>
         </main>
     </section>
 
     <article>
-        <div class = "titulo">        
+        <div class="titulo">
             <div class="cont-desafios">
                 <div class="desafios">1. Faça uma soma que resulte em 8.</div>
                 <div class="desafios" id="grid0"></div>
@@ -57,16 +60,16 @@
                 <div class="desafios" id="grid2"></div>
                 <div class="desafios">4. Faça uma divisão que resulte em 2.</div>
                 <div class="desafios" id="grid3"></div>
-                
+
             </div>
 
             <div class="desempenho">
 
             </div>
-                 
+
         </div>
 
-        <div class = "card">
+        <div class="card">
             <div class="linhaDeInput">
                 <label>Valor 1:</label>
                 <input type="number" id="inputUm" placeholder="Digite o primeiro valor"></input>
@@ -79,7 +82,7 @@
                     <option value="-">-</option>
                     <option value="*">&#215;</option>
                     <option value="/">&#247;</option>
-                </select>                    
+                </select>
             </div>
             <div class="linhaDeInput">
                 <label>Valor 2:</label>
@@ -88,7 +91,7 @@
             <button onclick="resposta.salvar()" id="btn1">Responder</button>
             <button onclick="resposta.cancelar()">Cancelar</button>
         </div>
-        
+
         <div class="conteudo">
             <table border=1>
                 <thead>
@@ -100,12 +103,13 @@
                     <th>Açoes</th>
                 </thead>
                 <tbody id="tbody">
-                    
+
                 </tbody>
             </table>
         </div>
     </article>
 
+    <!-- Rodapé -->
     <section class="rodape">
         <footer class="container">
             <article>
@@ -123,22 +127,24 @@
                 <ul class="navigation-footer">
                     <li>
                         <a href="#" class="custom-icon">
-                            <img src="/assets/instagram (1).svg">
+                            <img src="../assets/instagram (2).svg">
                         </a>
                     </li>
                     <li>
                         <a href="#" class="custom-icon">
-                            <img src="/assets/facebook (2).svg">
+                            <img src="../assets/facebook (3).svg">
                         </a>
                     </li>
                     <li>
                         <a href="#" class="custom-icon">
-                            <img src="/assets/linkedin.svg">
+                            <img src="../assets/linkedin (1).svg">
                         </a>
                     </li>
                 </ul>
             </article>
         </footer>
+
+
 
 
 
@@ -155,7 +161,7 @@
         <script>
             new window.VLibras.Widget('https://vlibras.gov.br/app');
         </script>
-
+    </section>
 </body>
 
 </html>

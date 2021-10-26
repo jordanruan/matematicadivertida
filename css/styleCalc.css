@@ -6,6 +6,7 @@
 }
 
 body {
+
 	display: block;
 	justify-content: center;
 	align-items: center;
@@ -20,6 +21,7 @@ main {
 }
 
 #cotacao {
+
 	font-size: 300%;
 }
 
@@ -143,6 +145,7 @@ input[type=button] {
 	font-size: 1vw;
 	padding-bottom: 10px;
 }
+
 
 @media(max-width: 628px) {
 	.navbar {

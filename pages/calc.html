@@ -21,8 +21,10 @@
 	<section class="menu">
 		<nav class="navbar container">
 			<div class="logo">
-				<a href="">LOGO
-			</div></a>
+				<a href="#">
+					<img src="../assets/logo.png" class="img-logo" />
+				</a>
+			</div>
 			<ul class="site-navigation">
 				<li class="nav-links"><a href="../index.html">Inicio</a></li>
 				<li class="nav-links"><a href="./calc.html">Calculdora</a></li>
@@ -35,27 +37,46 @@
 			</ul>
 		</nav>
 	</section>
-	<!-- Main com as informações principais e sugestçoes de exercicios para os usuarios -->
-	<main><div id="instrucao">
-		<h1>Que tal estudar um pouco de matemática junto com educação financeira?!</h1>
-		<p>Você conhece as moedas mais valiosas do mundo? Que tal fazer algumas conversões e comparar os valores das moedas.</p>
-		<h2>Lista de exercícios:</h2>
-		<ul>
-			<li>Use o conversor de moedas e a calculadora e descubra quantos Reais vale 100 Dólares</li>
-			<li>Use o conversor de moedas e a calculadora e descubra quantos Reais vale 100 Euros</li>
-			<li>Use o conversor de moedas e a calculadora e descubra quantos Euros vale 100 Reais</li>
-			<li>Use o conversor de moedas e a calculadora e descubra quantos Euros vale 100 Reais</li>
-		</ul>
-		<p>Vamos brincar um pouco mais com a calculadora? Clique no botão acima da calculadora, mude para a calculadora científica.</p>
-		<h2>Lista de exercícios:</h2>
-		<ul>
-			<li>Usando a calculadora científica descubra a raiz quadrada de 16</li>
-			<li>Usando a calculadora científica descubra quanto é 5 elevado a 2</li>
-			<li>Usando a calculadora científica descubra quanto é 8 elevado a 3</li>
-		</ul>
-	</div>
 
-	<!-- Selects e Div para apresentação da cotação -->
+	<section class="homezao">
+        <div class="bk-home">
+            <main class="home container">
+                <div class="home-text">
+                    <h1 class="titulo-home">
+                        <span>Calculadora</span>
+                    </h1>
+                </div>
+            </main>
+        </div>
+        <!-- Nuvem ;) -->
+
+        <div class="shape"></div>
+
+    </section>
+	<!-- Main com as informações principais e sugestçoes de exercicios para os usuarios -->
+	<main>
+		<div id="instrucao">
+			<h1>Que tal estudar um pouco de matemática junto com educação financeira?!</h1>
+			<p>Você conhece as moedas mais valiosas do mundo? Que tal fazer algumas conversões e comparar os valores das
+				moedas.</p>
+			<h2>Lista de exercícios:</h2>
+			<ul>
+				<li>Use o conversor de moedas e a calculadora e descubra quantos Reais vale 100 Dólares</li>
+				<li>Use o conversor de moedas e a calculadora e descubra quantos Reais vale 100 Euros</li>
+				<li>Use o conversor de moedas e a calculadora e descubra quantos Euros vale 100 Reais</li>
+				<li>Use o conversor de moedas e a calculadora e descubra quantos Euros vale 100 Reais</li>
+			</ul>
+			<p>Vamos brincar um pouco mais com a calculadora? Clique no botão acima da calculadora, mude para a
+				calculadora científica.</p>
+			<h2>Lista de exercícios:</h2>
+			<ul>
+				<li>Usando a calculadora científica descubra a raiz quadrada de 16</li>
+				<li>Usando a calculadora científica descubra quanto é 5 elevado a 2</li>
+				<li>Usando a calculadora científica descubra quanto é 8 elevado a 3</li>
+			</ul>
+		</div>
+
+		<!-- Selects e Div para apresentação da cotação -->
 		<div id="cotacao">0.0</div>
 		<select name="moeda1" id="moeda1">
 			<option hidden disabled selected value> Escolha uma moeda </option>
@@ -84,7 +105,7 @@
 		<input class="tela">
 
 		<table>
-<!-- Linhas e colunas povoando a calculadora -->
+			<!-- Linhas e colunas povoando a calculadora -->
 			<tr>
 				<td><input type="button" value="C" onclick="limpar()" id="c1"></td>
 				<td><input type="button" value="<" onclick="apagarUltimo()"></td>
@@ -124,7 +145,7 @@
 		<footer class="container">
 			<article>
 				<a href="#" class="logo-footer">
-					<img src="https://img.icons8.com/color-glass/48/000000/idea.png" />
+					<img src="../assets/logo.png" class="img-logo" />
 
 				</a>
 			</article>
@@ -154,7 +175,7 @@
 			</article>
 		</footer>
 
-<!-- VLibras adicionado -->
+		<!-- VLibras adicionado -->
 
 		<div vw class="enabled">
 			<div vw-access-button class="active"></div>
@@ -166,12 +187,12 @@
 		<script>
 			new window.VLibras.Widget('https://vlibras.gov.br/app');
 		</script>
-<!-- Controle do tamanho das letras, permite aumentar e diminuir as letras -->		
+		<!-- Controle do tamanho das letras, permite aumentar e diminuir as letras -->
 	</section>
 	<div id="visionControl">
 		<img src="../assets/olho.png" id="visionPlus">
 		<img src="../assets/olhomenos.png" id="visionMinus">
-		
+
 	</div>
 </body>
 

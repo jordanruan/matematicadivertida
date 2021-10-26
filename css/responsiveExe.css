@@ -1,0 +1,164 @@
+@media (max-width: 765px) {
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #operador {
+        margin-top: 26px;
+    }
+    button {
+        margin-top: 20px;
+        width: 25%;
+    }
+    #btn1 {
+        margin-right: 30px;
+    }
+    .conteudo {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:722px) {
+    .card{
+        width: 90%;
+    }
+}
+
+@media (max-width:642px) {
+    .card{
+        width: 100%;
+    }
+}
+
+@media(max-width: 628px) {
+    .navbar{
+        flex-direction: column;  
+    }         
+}
+
+@media(max-width: 577px){
+    .card{
+      padding: 10px;
+    }
+}
+
+@media(max-width: 557px){
+    .card{
+        padding: 0px;
+    }
+
+}
+
+@media(max-width: 545px){
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+    }    
+}
+
+@media(max-width: 538px) {
+    .nav-links{
+        margin:20px;
+    }   
+}
+
+@media (max-width: 537px) {
+    #operador{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 517px) {
+    #operador{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 497px) {
+    .cont-desafios{
+        width: 90%;
+    }
+    #operador{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    #label-op{
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 494px) {
+    .nav-links{
+        margin:15px;
+    }   
+}
+
+@media(max-width: 487px) {
+   .card{
+       flex-direction: column;
+       align-items: center;
+   }
+
+   button{
+    margin-top: 10px;
+   }
+
+   #btn1{
+       margin-right: 0;       
+   }
+}
+
+@media(max-width: 448px) {
+    .cont-desafios{
+        width: 100%;
+    }  
+}
+
+@media(max-width: 456px) {
+    .nav-links{
+        margin:10px;
+    }   
+}
+
+@media(max-width: 415px) {
+    .nav-links{
+        margin:5px;
+    }   
+}
+
+@media(max-width: 415px) {
+    .nav-links{
+        margin:5px;
+    }
+
+    .titulo{
+        padding: 20px;
+    }    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

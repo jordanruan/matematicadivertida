@@ -8,6 +8,7 @@
 	<title>Aplica Matématica</title>
 	<link rel="stylesheet" href="../css/style.css" />
 	<link rel="stylesheet" href="../css/styleCalc.css" />
+	<link rel="stylesheet" href="../css/calcResponsive.css" />
 	<script type="text/Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/calcScript.js" defer></script>
 	<script type="text/javascript" src="../js/scriptLetters.js" defer></script>
@@ -34,6 +35,7 @@
 			</ul>
 		</nav>
 	</section>
+	<!-- Main com as informações principais e sugestçoes de exercicios para os usuarios -->
 	<main><div id="instrucao">
 		<h1>Que tal estudar um pouco de matemática junto com educação financeira?!</h1>
 		<p>Você conhece as moedas mais valiosas do mundo? Que tal fazer algumas conversões e comparar os valores das moedas.</p>
@@ -52,6 +54,8 @@
 			<li>Usando a calculadora científica descubra quanto é 8 elevado a 3</li>
 		</ul>
 	</div>
+
+	<!-- Selects e Div para apresentação da cotação -->
 		<div id="cotacao">0.0</div>
 		<select name="moeda1" id="moeda1">
 			<option hidden disabled selected value> Escolha uma moeda </option>
@@ -68,17 +72,19 @@
 			<option value="BRL">Real</option>
 		</select>
 	</main>
+	<!-- Swtich que troca da calculadora Normal para a Cientifica  -->
 	<div class="switch__container">
 		<div id="switchText">Normal</div>
 		<input id="switch-shadow" class="switch switch--shadow" type="checkbox">
 		<label for="switch-shadow"></label>
 	</div>
+	<!-- Criação do layout da calculadora. 3 campos desabilitados para uso na calculadora cientifica -->
 	<div class="calculator">
 
 		<input class="tela">
 
 		<table>
-
+<!-- Linhas e colunas povoando a calculadora -->
 			<tr>
 				<td><input type="button" value="C" onclick="limpar()" id="c1"></td>
 				<td><input type="button" value="<" onclick="apagarUltimo()"></td>
@@ -148,7 +154,7 @@
 			</article>
 		</footer>
 
-
+<!-- VLibras adicionado -->
 
 		<div vw class="enabled">
 			<div vw-access-button class="active"></div>
@@ -160,7 +166,7 @@
 		<script>
 			new window.VLibras.Widget('https://vlibras.gov.br/app');
 		</script>
-		
+<!-- Controle do tamanho das letras, permite aumentar e diminuir as letras -->		
 	</section>
 	<div id="visionControl">
 		<img src="../assets/olho.png" id="visionPlus">

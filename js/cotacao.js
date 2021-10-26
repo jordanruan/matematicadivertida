@@ -1,3 +1,4 @@
+// função que busca a cotação das moedas por API
 function consultaCotação() {
     let moeda1 = $("#moeda1 option:selected").val();
     let moeda2 = $("#moeda2 option:selected").val();

@@ -6,7 +6,7 @@
 }
 
 body {
-	
+
 	display: block;
 	justify-content: center;
 	align-items: center;
@@ -19,7 +19,9 @@ main {
 	justify-content: center;
 	align-items: center;
 }
-#cotacao{
+
+#cotacao {
+
 	font-size: 300%;
 }
 
@@ -144,3 +146,39 @@ input[type=button] {
 	padding-bottom: 10px;
 }
 
+
+@media(max-width: 628px) {
+	.navbar {
+		flex-direction: column;
+	}
+}
+
+@media(max-width: 538px) {
+	.nav-links {
+		margin: 20px;
+	}
+}
+
+@media(max-width: 494px) {
+	.nav-links {
+		margin: 15px;
+	}
+}
+
+@media(max-width: 456px) {
+	.nav-links {
+		margin: 10px;
+	}
+}
+
+@media(max-width: 415px) {
+	.nav-links {
+		margin: 5px;
+	}
+}
+
+@media(max-width: 415px) {
+	.nav-links {
+		margin: 5px;
+	}
+}

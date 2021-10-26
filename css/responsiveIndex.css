@@ -1,41 +1,130 @@
-    @media (max-width: 1160px) {
-        .servicos-content {
-            flex-direction: column;
+        @media (max-width: 1160px) {
+            .servicos-content {
+                flex-direction: column;
+            }
+            .containerBio {
+                flex-direction: column;
+            }
         }
-        .containerBio {
-            flex-direction: column;
+        
+        @media(max-width:726px) {
+            .navbar {
+                flex-direction: column;
+            }
         }
-    }
-    
-    @media(max-width:726px) {
-        .navbar {
-            flex-direction: column;
+        
+        @media(max-width:555px) {
+            footer {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 30px;
+            }
+            .img-logo {
+                margin-bottom: 20px;
+            }
+            article {
+                text-align: center;
+                padding: 20px;
+            }
+            .navigation-footer {
+                padding: 20px;
+                justify-content: center;
+                align-items: center;
+                margin-left: 24px;
+            }
+            .devcontent p {
+                width: 90%;
+                font-size: 10px;
+                margin: 20px auto;
+            }
+            .devcontent h1 {
+                font-size: 2.5rem;
+            }
         }
-    }
-    
-    @media(max-width:555px) {
-        footer {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 30px;
+        
+        @media(max-width:468px) {
+            .homezao .shape {
+                position: absolute;
+                bottom: -5rem;
+                height: 10rem;
+                width: 100%;
+                background: url(../assets/shape.png);
+                block-size: 100rem 15rem;
+                filter: drop-shadow(0 -0.1 rem 0.1 rem rgba(0, 0, 0, .2));
+                animation: animate 10s linear infinite;
+            }
+            .btn-login {
+                display: none;
+                margin: 0;
+            }
+            .nav-links {
+                margin: 8px 8px 5px;
+            }
+            .actor1 {
+                width: 350px;
+                height: 270px;
+                object-fit: cover;
+            }
         }
-        .img-logo {
-            margin-bottom: 20px;
+        
+        @media (max-width:360px) {
+            .shape {
+                display: none;
+            }
+            .home-text p {
+                font-size: 0.8rem;
+            }
+            .titulo-home {
+                font-size: 3rem;
+            }
+            .titulo-model {
+                text-align: center;
+            }
+            .actor1 {
+                width: 300px;
+                height: 270px;
+                object-fit: cover;
+            }
+            .devcontent p {
+                margin: 40px auto;
+            }
+            .box {
+                width: 320px;
+            }
+            .devcontent h1 {
+                font-size: 2.5rem;
+            }
         }
-        article {
-            text-align: center;
-            padding: 20px;
+        
+        @media (max-width:320px) {
+            .box {
+                width: 300px;
+            }
         }
-        .navigation-footer {
-            padding: 20px;
-            justify-content: center;
-            align-items: center;
-            margin-left: 24px;
+        
+        @media (max-width:540px) {
+            .box {
+                width: 300px;
+            }
+            .homezao .shape {
+                bottom: -6rem;
+            }
+            .home-text p {
+                width: 90%;
+                margin: 20px auto;
+            }
         }
-        .devcontent p {
-            width: 90%;
-            font-size: 10px;
-            margin: auto;
+        
+        @media (max-width:280px) {
+            .navigation-servicos {
+                width: 90%;
+                margin: auto;
+            }
+            .btn-vaga {
+                margin-left: 60px;
+            }
+            .actor1 {
+                width: 260px;
+            }
         }
-    }

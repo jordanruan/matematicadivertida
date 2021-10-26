@@ -66,14 +66,7 @@ class Resposta {
             $(td_operador).text(this.arrayResposta[i].operador).addClass("center")
             $(td_inputDois).text(this.arrayResposta[i].inputDois).addClass("center")
             let resultado = this.arrayResposta[i].inputUm + this.arrayResposta[i].operador + this.arrayResposta[i].inputDois
-            $(td_resultado).text(eval(resultado)).addClass("center")
-
-            //para adiconar uma classe (.center) as colunas            
-            // $(td_id).addClass("center");
-            // $(td_inputUm).addClass("center");
-            // $(td_operador).addClass("center");
-            // $(td_inputDois).addClass("center");
-            // $(td_resultado).addClass("center");                    
+            $(td_resultado).text(eval(resultado)).addClass("center")                      
 
 
             // criando um elemento de imagem para ser colocado na quarta coluna da linha

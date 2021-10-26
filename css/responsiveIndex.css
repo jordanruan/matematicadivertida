@@ -1,1 +1,41 @@
-@media (max-width: 924px) {}
+    @media (max-width: 1160px) {
+        .servicos-content {
+            flex-direction: column;
+        }
+        .containerBio {
+            flex-direction: column;
+        }
+    }
+    
+    @media(max-width:726px) {
+        .navbar {
+            flex-direction: column;
+        }
+    }
+    
+    @media(max-width:555px) {
+        footer {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+        .img-logo {
+            margin-bottom: 20px;
+        }
+        article {
+            text-align: center;
+            padding: 20px;
+        }
+        .navigation-footer {
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 24px;
+        }
+        .devcontent p {
+            width: 90%;
+            font-size: 10px;
+            margin: auto;
+        }
+    }

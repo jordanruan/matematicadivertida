@@ -89,3 +89,10 @@ h1, h2, h3 {
     z-index: 2;    
     
 }
+@media (max-width: 1160px) {
+    .card {
+       
+        width: 98%;
+      
+    }
+}

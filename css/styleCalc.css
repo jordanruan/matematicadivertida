@@ -26,8 +26,10 @@ main {
 }
 
 #instrucao {
+	margin-top: 3vw;
 	line-height: 1.5;
 	margin-bottom: 1vw;
+	color: #ED4343;
 }
 
 #moeda1, #moeda2 {

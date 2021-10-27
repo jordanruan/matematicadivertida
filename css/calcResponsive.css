@@ -1,0 +1,75 @@
+@media(max-width: 768px) {
+	#moeda1, #moeda2 {
+		
+		height: 4vw;
+		width: 14vw;
+	}
+}
+@media(max-width: 628px) {
+	#moeda1, #moeda2 {
+		
+		height: 4vw;
+		width: 14vw;
+	}
+	* {
+		
+		font-size: 3vw;
+	}
+}
+@media(max-width: 1024px) {
+	#moeda1, #moeda2 {
+		
+		height: 4vw;
+		width: 16vw;
+	}
+	#instrucao{
+		margin-top: 15vw;
+	}
+
+}
+@media(max-width: 628px) {
+	#moeda1, #moeda2 {
+		
+		height: 4vw;
+		width: 16vw;
+	}
+	* {
+		
+		font-size: 3vw;
+	}
+	#switchText {
+
+		font-size: 3vw;
+		
+	}
+}
+@media(max-width: 375px) {
+	#moeda1, #moeda2 {
+		
+		height: 8vw;
+		width: 28vw;
+	}
+	* {
+		
+		font-size: 3vw;
+	}
+	#instrucao{
+		margin-top: 17vw;
+	}
+}
+@media(max-width: 280px) {
+	#moeda1, #moeda2 {
+		
+		height: 8vw;
+		width: 28vw;
+	}
+	* {
+		
+		font-size: 4vw;
+	}
+	#switchText {
+
+		font-size: 4vw;
+		
+	}
+}

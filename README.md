@@ -1,7 +1,7 @@
 <h1 align="center">Matemática Divertida ✨</h1>
 <h3 align="center">Landing page que fornece exercicios, calculadora e serviços exclusivos.</h3>
 
-<p align="center"><a href="https://jordanruan.github.io/bolhadev/" >Finalizado 🚀</a><p>
+<p align="center"><a href="https://jordanruan.github.io/matematicadivertida" >Finalizado 🚀</a><p>
 
 ![banner](https://github.com/jordanruan/matematicadivertida/blob/main/assets/mockup-desktop.png?raw=true)
 

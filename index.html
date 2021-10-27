@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aplica Matématica</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/lightslider.css">
     <script src="js/script.js"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
     <script type="text/javascript" src="js/scriptLetters.js" defer></script>
     <script type="text/javascript" src="../js/cotacao.js" defer></script>
     <script type="text/Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/responsiveIndex.css" />
 
 </head>
 
@@ -21,10 +22,11 @@
     <!-- Menu -->
     <section class="menu">
         <nav class="navbar container">
-
             <div class="logo">
-                <a href="">
-                    <img src="https://img.icons8.com/color-glass/48/000000/idea.png" />
+                <a href="#">
+                    <img src="assets/logo.png" class="img-logo" />
+                </a>
+
             </div>
             </a>
             <ul class="site-navigation">
@@ -38,7 +40,6 @@
         </nav>
     </section>
 
-
     <!-- Home -->
 
     <section class="homezao">
@@ -48,24 +49,22 @@
                     <h1 class="titulo-home">
                         Matemática <span>Divertida</span>
                     </h1>
-                    <p>Acreditamos que a matématica, é <br>brincadeira e o protagonismo mudam o mundo</p>
+                    <p id='intro'>Acreditamos que a matématica é protagonista no mundo moderno e que podemos ensinar a matématica de forma divertida para crianças. </p>
                 </div>
             </main>
         </div>
+        <!-- Nuvem ;) -->
         <div class="shape"></div>
-
     </section>
 
-    <!-- Nuvem ;) -->
 
 
     <!-- MODELO DE APRENDIZAGEM -->
-    <article class="modelAprender container">
-        <div class="model-text">
-            <h2 class="titulo-model"> Modelo de Aprendizagem </h2>
-        </div>
+    <div class="modelAprender container">
+        <!--  <div class="model-text"> -->
         <div class="servicos-content">
             <ul class="navigation-servicos">
+                <h2 class="titulo-model"> Modelo de Aprendizagem </h2>
                 <li class="servicos">
                     <img src="assets/check-circle.svg" alt="check">Exercicios personalizados
                 </li>
@@ -81,17 +80,68 @@
 
             <img src="assets/actor1.jpg" class="actor1" alt="criança estudando">
         </div>
-    </article>
     </div>
-    <!-- Cards devs -->
-    <div class="content container">
-        <div class="box">
-            <p class="marvel">
-                <img src="" class="model">
-            <div class="details"></div>
+    </div>
+
+    <!-- Bio devs -->
+    <div class="bio-dev">
+        <div class="devcontent container">
+            <h1>Conheça o <span>Time</span></h1>
+            <p>somos um pequeno grupo de programadores, inventores, e designers de diferentes partes do mundo e uma missão
             </p>
+            <div class="line"></div>
+        </div>
+        <div class="containerBio container">
+            <!--  Dev Bio -->
+            <div class="box">
+                <p class="dev">Rodolpho Rodrigues</p>
+                <!-- Model -->
+                <img src="assets/The King Monitor Rods.png" class="model">
+                <!-- details -->
+                <div class="details">
+                    <h1>BCW7 🥇</h1>
+                    <h5>Formado em Comercio Exterior. Apaixonado por tecnologia e tudo envolvido com o tema. Aluno da turma BCW7 da SoulCode. Se juntou ao Matemática Divertida para ajudar a mostrar as crianças o quão importante é esse tema para o desenvolvimento
+                        humano.
+                    </h5>
+                </div>
+            </div>
+            <div class="box">
+                <p class="dev">Karolina de Melo</p>
+                <!-- Model -->
+                <img src="assets/Karolzita2.png" class="model">
+                <!-- details -->
+                <div class="details">
+                    <h1>BCW7 🥇</h1>
+                    <h5>Formada em Ciências Contábeis e Direito. Aluno da turma BCW7 da SoulCode. Se juntou ao Matemática Divertida para ajudar a mostrar as crianças o quão importante é esse tema para o desenvolvimento humano..</h5>
+                </div>
+            </div>
+            <div class="box">
+                <p class="dev">Jordan Ruan</p>
+                <!-- Model -->
+                <img src="assets/2.png" class="model">
+                <!-- details -->
+                <div class="details">
+                    <h1>BCW7 🥇</h1>
+                    <h5>Formado em Analise e Desenvolviemento de Sistemas, As mudanças só são possíveis através da tecnologia deve ser por isso que sou apaixonado por ela Aluno da turma BCW7 da SoulCode. Se juntou ao Matemática Divertida para ajudar a administrar
+                        a parte financeira da família.
+                    </h5>
+                </div>
+            </div>
+            <div class="box">
+                <p class="dev">Anderson Cavalcante</p>
+                <!-- Model -->
+                <img src="assets/Anderson1.png" class="model">
+                <!-- details -->
+                <div class="details">
+                    <h1>BCW7 🥇</h1>
+                    <h5>36 anos. MEI - Barbeiro. Aprendendo a amar a tecnologia, e absorvendo o máximo de informações possíveis, para dar meu melhor !! Aluno da turma BCW7 da SoulCode. Se juntou ao Matemática Divertida para ajudar os pais juntamente com seus
+                        filhos o quão importante é esse tema para o desenvolvimento humano.</h5>
+                </div>
+            </div>
+
         </div>
     </div>
+
 
 
     <!-- Rodapé -->
@@ -99,7 +149,7 @@
         <footer class="container">
             <article>
                 <a href="#" class="logo-footer">
-                    <img src="https://img.icons8.com/color-glass/48/000000/idea.png" />
+                    <img src="assets/logo.png" class="img-logo" />
 
                 </a>
             </article>
@@ -128,8 +178,8 @@
                 </ul>
             </article>
         </footer>
-        ...
-        <!-- Vlibras da página -->
+
+        <!-- VLibras adicionado -->
 
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
@@ -141,16 +191,13 @@
         <script>
             new window.VLibras.Widget('https://vlibras.gov.br/app');
         </script>
+        <!-- Controle do tamanho das letras, permite aumentar e diminuir as letras -->
     </section>
     <div id="visionControl">
-        <img src="../assets/olho.png" id="visionPlus">
-        <img src="../assets/olhomenos.png" id="visionMinus">
+        <img src="assets/olho.png" id="visionPlus">
+        <img src="assets/olhomenos.png" id="visionMinus">
 
     </div>
-
-
-
-
 </body>
 
 </html>

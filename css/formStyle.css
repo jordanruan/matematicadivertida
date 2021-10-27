@@ -58,7 +58,7 @@ h1, h2, h3 {
     margin: auto;
     justify-content: center;
 }
-
+/* Configurações para a caixa de aviso */
 #confirmaCpf{
     display: none;
     width: 500px;
@@ -88,4 +88,11 @@ h1, h2, h3 {
     margin-top: 120px;
     z-index: 2;    
     
+}
+@media (max-width: 1160px) {
+    .card {
+       
+        width: 98%;
+      
+    }
 }

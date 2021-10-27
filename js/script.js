@@ -1,3 +1,4 @@
+// variaveis para controle das respostas.
 var valores = ["8", "13", "36", "2"]
 
 var checkOperadores = ["+", "-", "*", "/"]
@@ -91,7 +92,8 @@ class Resposta {
             imgEdit.setAttribute("onclick", "resposta.mostrarDados(" + JSON.stringify(this.arrayResposta[i]) + ")");
 
             
-             //criamos um elemento img que conterá o desemprenho da pessoa
+           //criamos um elemento img que conterá o desemprenho da pessoa
+
             let conferir = document.createElement("img");
 
             $("#grid" + i).text("")
@@ -112,15 +114,26 @@ class Resposta {
                         
         }
 
+
+
+        // controle para resultado final
+
         if (acerto){            
             desempenho++
             console.log(desempenho)
 
         } else if(erro) {            
             desempenho--
+
             console.log(desempenho)
         }   
         
+
+
+            console.log(desempenho) 
+            
+        }
+        // Resultado final de acordo com o desempenho nas respostas
 
         $(".desempenho").text("")
         if (this.arrayResposta.length == valores.length) {
@@ -145,6 +158,7 @@ class Resposta {
         
 
     }
+    //adcição das respostas no array
     adicionar(resposta) {
         this.arrayResposta.push(resposta);
         this.id++;
@@ -187,10 +201,13 @@ class Resposta {
         }
         return true;
     }
-
+// metodo para deletar buscando pelo id escolhido
     deletar(idProcurado) {
         
         if (confirm("Deseja realmente deletar a resposta de id " + idProcurado)) {
+
+       
+
             for (let i = 0; i < this.arrayResposta.length; i++) {
                 if (this.arrayResposta[i].id == idProcurado) {
                     this.arrayResposta.splice(i, 1);
@@ -219,6 +236,7 @@ class Resposta {
 
     atualizar(id) {
        
+        
         for (let i = 0; i < this.arrayResposta.length; i++) {
             if (id == this.arrayResposta[i].id) {
                 this.arrayResposta[i].inputUm = $("#inputUm").val();

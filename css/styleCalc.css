@@ -1,3 +1,4 @@
+/* configurações gerais */
 * {
 	margin: 0;
 	padding: 0;
@@ -6,7 +7,7 @@
 }
 
 body {
-	
+
 	display: block;
 	justify-content: center;
 	align-items: center;
@@ -19,13 +20,17 @@ main {
 	justify-content: center;
 	align-items: center;
 }
-#cotacao{
+/* Estilos para a api de cotação */
+#cotacao {
+
 	font-size: 300%;
 }
 
 #instrucao {
+	margin-top: 3vw;
 	line-height: 1.5;
 	margin-bottom: 1vw;
+	color: #ED4343;
 }
 
 #moeda1, #moeda2 {
@@ -37,7 +42,7 @@ main {
 	height: 2vw;
 	width: 14vw;
 }
-
+/* Estilos para a calculadora */
 .calculator {
 	width: 245px;
 	margin: auto;
@@ -58,7 +63,7 @@ main {
 #c1 {
 	background-color: #ED4343;
 }
-
+/* Estilos para os botões da calculadora, alguns tratados individualmente*/
 input[type=button] {
 	width: 40px;
 	height: 40px;
@@ -72,12 +77,13 @@ input[type=button] {
 	height: 79px;
 	background-color: #0e9e09;
 	width: 87px;
+	
 }
 
 #numero0 {
 	width: 85px;
 }
-
+/* Serie de controles para permitir o efeito do switch, controlar o movimento e a mudança de cor do mesmo */
 .switch__container {
 	margin: 30px auto;
 	width: 70px;
@@ -144,3 +150,39 @@ input[type=button] {
 	padding-bottom: 10px;
 }
 
+
+@media(max-width: 628px) {
+	.navbar {
+		flex-direction: column;
+	}
+}
+
+@media(max-width: 538px) {
+	.nav-links {
+		margin: 20px;
+	}
+}
+
+@media(max-width: 494px) {
+	.nav-links {
+		margin: 15px;
+	}
+}
+
+@media(max-width: 456px) {
+	.nav-links {
+		margin: 10px;
+	}
+}
+
+@media(max-width: 415px) {
+	.nav-links {
+		margin: 5px;
+	}
+}
+
+@media(max-width: 415px) {
+	.nav-links {
+		margin: 5px;
+	}
+}

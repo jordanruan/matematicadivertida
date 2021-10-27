@@ -4,25 +4,24 @@ function inserirNumero(item) {
 	let valorAtual = $('.tela').val();
 	// o valor digitado é adicionado ao valor que já estava na tela
 	let digitado = valorAtual.length;
-	// primeiro controle inicia como falso, se o valor recebe um operador matematico ele se torna true
+	// primeiro controle inicia como falso, se o valor recebe um operador matematico ele se torna true. Com certeza foi a parte que deu mais trabalho pra fazer. Pode remover a Checagem do + e do - no inicio pra trabalhar com conta de numeros negativos, porem tem o risco de quebra o funcionamento, então deixei a checagem dos 4 operadores. o Uso do EVAL com certeza fez muita diferença e diminuiu o trabalho.
 	let controle = false;
-	if(item == '+' || item == '-' || item == '*' || item == '/')
-	controle = true;
+	if (item == '+' || item == '-' || item == '*' || item == '/')
+		controle = true;
 	// previne que a primeira coisa digitada seja um operador matematico
-	if(digitado == 0)
-	{
-		if(controle)
-		return;
+	if (digitado == 0) {
+		if (controle)
+			return;
 	}
-	// segundo controle confere a ultima posição se ela for um operador matematico e tentar adicionar um segundo operador, ele subescreve o mesmo, se for um numero ele é adicionado
+	// segundo controle confere a ultima posição se ela for um operador matematico e tentar adicionar um segundo operador, ele subescreve o mesmo, se for um numero ele é adicionado. 
 	let controleNovo = false;
-	let ultimoDigitado = valorAtual[digitado-1];
-	if(ultimoDigitado == '+' || ultimoDigitado == '-' || ultimoDigitado == '*' || ultimoDigitado == '/')
-	controleNovo = true;
-	if(controle && controleNovo)
-	$('.tela').val(valorAtual.substring(0,digitado-1) + item);
+	let ultimoDigitado = valorAtual[digitado - 1];
+	if (ultimoDigitado == '+' || ultimoDigitado == '-' || ultimoDigitado == '*' || ultimoDigitado == '/')
+		controleNovo = true;
+	if (controle && controleNovo)
+		$('.tela').val(valorAtual.substring(0, digitado - 1) + item);
 	else
-	$('.tela').val($('.tela').val() + item);
+		$('.tela').val($('.tela').val() + item);
 }
 // Função para apagar o ultimo numero digitado. 
 function apagarUltimo() {
@@ -38,82 +37,83 @@ function resultado() {
 	let valorAtual = $('.tela').val();
 	let digitado = valorAtual.length;
 	let controle = false;
-	let item = valorAtual[digitado-1];
+	let item = valorAtual[digitado - 1];
 	// checa se o ultimo digitado foi um operador, caso positivo retorna ERRO FATAL
-	if(item == '+' || item == '-' || item == '*' || item == '/')
-	controle = true;
-	if(controle)
+	if (item == '+' || item == '-' || item == '*' || item == '/')
+		controle = true;
+	if (controle)
 		$('.tela').val("ERRO FATAL");
 	else
-	// eval avalia o valorAtual e faz a conta acontecer (gostei muito de conhecer isso!)
+		// eval avalia o valorAtual e faz a conta acontecer (gostei muito de conhecer isso!)
 		$('.tela').val(eval($('.tela').val()));
 }
 function raizQuadrada() {
 	let valorAtual = $('.tela').val();
 	let digitado = valorAtual.length;
 	let controle = false;
-	let item = valorAtual[digitado-1];
+	let item = valorAtual[digitado - 1];
 	// checa se o ultimo digitado foi um operador, caso positivo retorna ERRO FATAL
-	if(item == '+' || item == '-' || item == '*' || item == '/')
-	controle = true;
-	if(controle)
+	if (item == '+' || item == '-' || item == '*' || item == '/')
+		controle = true;
+	if (controle)
 		$('.tela').val("ERRO FATAL");
 	else
-	// eval avalia o valorAtual e faz a conta acontecer (gostei muito de conhecer isso!)
+		// eval avalia o valorAtual e faz a conta acontecer (gostei muito de conhecer isso!)
 		$('.tela').val(Math.sqrt($('.tela').val()));
 }
 function elevado2() {
 	let valorAtual = $('.tela').val();
 	let digitado = valorAtual.length;
 	let controle = false;
-	let item = valorAtual[digitado-1];
+	let item = valorAtual[digitado - 1];
 	// checa se o ultimo digitado foi um operador, caso positivo retorna ERRO FATAL
-	if(item == '+' || item == '-' || item == '*' || item == '/')
-	controle = true;
-	if(controle)
+	if (item == '+' || item == '-' || item == '*' || item == '/')
+		controle = true;
+	if (controle)
 		$('.tela').val("ERRO FATAL");
 	else
-	// eval avalia o valorAtual e faz a conta acontecer (gostei muito de conhecer isso!)
+		// eval avalia o valorAtual e faz a conta acontecer (gostei muito de conhecer isso!)
 		$('.tela').val(Math.pow($('.tela').val(), 2));
-}function elevado3() {
+} function elevado3() {
 	let valorAtual = $('.tela').val();
 	let digitado = valorAtual.length;
 	let controle = false;
-	let item = valorAtual[digitado-1];
+	let item = valorAtual[digitado - 1];
 	// checa se o ultimo digitado foi um operador, caso positivo retorna ERRO FATAL
-	if(item == '+' || item == '-' || item == '*' || item == '/')
-	controle = true;
-	if(controle)
+	if (item == '+' || item == '-' || item == '*' || item == '/')
+		controle = true;
+	if (controle)
 		$('.tela').val("ERRO FATAL");
 	else
-	// eval avalia o valorAtual e faz a conta acontecer (gostei muito de conhecer isso!)
-	$('.tela').val(Math.pow($('.tela').val(), 3));
+		// eval avalia o valorAtual e faz a conta acontecer (gostei muito de conhecer isso!)
+		$('.tela').val(Math.pow($('.tela').val(), 3));
 }
-$('#switch-shadow').click(function(){
-	if($("#switch-shadow").is(":checked")){
+// Controle para alternancia entre a calculadora comum e a cientifica. No primeiro passo o IF confere o botão e tirar o disabled deles. No segundo momento faz o caminho inverso e volta o disabled para os botões que são da calculadora cientifica. A função tambem altera o texto da DIV acima mostrando qual das funções esta ativa no momento.
+$('#switch-shadow').click(function () {
+	if ($("#switch-shadow").is(":checked")) {
 		$("#switchText").text("Científica")
 		$('#elevado3').attr("disabled", false)
-		$('#elevado3').click(function(){
+		$('#elevado3').click(function () {
 			elevado3();
 		})
 		$('#elevado2').attr("disabled", false)
-		$('#elevado2').click(function(){
+		$('#elevado2').click(function () {
 			elevado2();
 		})
 		$('#raizQuadrada').attr("disabled", false)
-		$('#raizQuadrada').click(function(){
+		$('#raizQuadrada').click(function () {
 			raizQuadrada();
 		})
-	}else{
+	} else {
 		$("#switchText").text("Normal")
 		$('#elevado3').attr("disabled", true)
-		$('#elevado3').unbind("onclick")		
+		$('#elevado3').unbind("onclick")
 		$('#elevado2').attr("disabled", true)
 		$('#elevado2').unbind("onclick")
 		$('#raizQuadrada').attr("disabled", true)
 		$('#raizQuadrada').unbind("onclick")
 		limpar();
 	}
-	
+
 })
 

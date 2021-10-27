@@ -1,3 +1,4 @@
+// função que busca a cotação das moedas por API. Apadatada do busca CEP visto em aula, junto com as ifnormações fornecidas pela propria API
 function consultaCotação() {
     let moeda1 = $("#moeda1 option:selected").val();
     let moeda2 = $("#moeda2 option:selected").val();

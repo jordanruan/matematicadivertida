@@ -7,19 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aplica Matématica</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <!-- folha de estilo interna para esta página -->
     <link rel="stylesheet" href="../css/styleExe.css" />
-    <!-- folha de estilo responsiva para esta página -->
     <link rel="stylesheet" href="../css/responsiveExe.css">
-    <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
-    <!-- Script desta pagina -->
-    <script src="../js/poo.js"></script>
+    <script src="../js/script.js"></script>
     <script type="text/javascript" src="../js/scriptLetters.js" defer></script>
 </head>
 
 <body>
-    
+    <!-- Menuu -->
     <section class="menu">
         <nav class="navbar container">
             <div class="logo">
@@ -59,8 +55,7 @@
         <div class="shape"></div>
 
     </section>
-<!-- Article para conter os dos desafios a serem cumpridos no card e a conferencia das respostas-->
-
+<!-- Serie de exercicios a serem realizados. incluiu espaço para mostrar se errou ou acertou o exercicio -->
     <article>
         <div class="titulo">
             <div class="cont-desafios">
@@ -74,17 +69,13 @@
                 <div class="desafios" id="grid3"></div>
 
             </div>
-
-<!-- Espaço onde aparecerá o desempenho geral -->
-
+<!-- Div para mostrar o resultado final de acordo com o desempenho -->
             <div class="desempenho">
 
-            <div class="desempenho"></div>
+            </div>
 
         </div>
-
-    <!-- Div onde serão feitos os exercícios de fato -->
-
+<!-- Tabela que será povoada com as respostas dos exercicios -->
         <div class="card">
             <div class="linhaDeInput">
                 <label>Valor 1:</label>
@@ -107,8 +98,6 @@
             <button onclick="resposta.salvar()" id="btn1">Responder</button>
             <button onclick="resposta.cancelar()">Cancelar</button>
         </div>
-
-        <!-- Tabela onde serão registradas as respostas  -->
 
         <div class="conteudo">
             <table border=1>
@@ -167,7 +156,7 @@
 
 	<!-- VLibras adicionado -->
 
-<!-- vlibras -->
+
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
             <div vw-plugin-wrapper>
@@ -180,9 +169,7 @@
             new window.VLibras.Widget('https://vlibras.gov.br/app');
         </script>
     </section>
-
-    <!-- <Acessibilidade para pessoas com deficiencia -->
-
+	<!-- Controle do tamanho das letras, permite aumentar e diminuir as letras -->
     <div id="visionControl">
         <img src="../assets/olho.png" id="visionPlus">
         <img src="../assets/olhomenos.png" id="visionMinus">

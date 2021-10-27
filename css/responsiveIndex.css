@@ -6,13 +6,13 @@
                 flex-direction: column;
             }
         }
-        
+
         @media(max-width:726px) {
             .navbar {
                 flex-direction: column;
             }
         }
-        
+
         @media(max-width:555px) {
             footer {
                 flex-direction: column;
@@ -42,7 +42,7 @@
                 font-size: 2.5rem;
             }
         }
-        
+
         @media(max-width:468px) {
             .homezao .shape {
                 position: absolute;
@@ -67,7 +67,7 @@
                 object-fit: cover;
             }
         }
-        
+
         @media (max-width:360px) {
             .shape {
                 display: none;
@@ -96,13 +96,13 @@
                 font-size: 2.5rem;
             }
         }
-        
+
         @media (max-width:320px) {
             .box {
                 width: 300px;
             }
         }
-        
+
         @media (max-width:540px) {
             .box {
                 width: 300px;
@@ -115,7 +115,7 @@
                 margin: 20px auto;
             }
         }
-        
+
         @media (max-width:280px) {
             .navigation-servicos {
                 width: 90%;
@@ -126,5 +126,23 @@
             }
             .actor1 {
                 width: 260px;
+            }
+        }
+
+        @media (max-width:768px) {
+            #visionMinus, #visionPlus {
+                width: 5%;
+            }
+        }
+
+        @media (max-width:425px) {
+            #visionMinus, #visionPlus {
+                width: 6%;
+            }
+        }
+
+        @media (max-width:375px) {
+            #visionMinus, #visionPlus {
+                width: 7%;
             }
         }

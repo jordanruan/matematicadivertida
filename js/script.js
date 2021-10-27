@@ -73,14 +73,14 @@ class Resposta {
             // criando um elemento de imagem para ser colocado na quarta coluna da linha
             let imgEdit = document.createElement("img");
             // atribuindo a esse elemento o caminho
-            imgEdit.src = "/assets/edit.png";
+            imgEdit.src = "../assets/edit.png";
             //adicionando um filho para a quarta coluna
             td_acoes.appendChild(imgEdit);
 
             // criando um elemento de imagem para ser colocado na quarta coluna da linha
             let imgDelete = document.createElement("img");
             // atribuindo a esse elemento o caminho
-            imgDelete.src = "/assets/delete.png";
+            imgDelete.src = "../assets/delete.png";
             //adicionando um filho para a quarta coluna
             td_acoes.appendChild(imgDelete);
 
@@ -100,12 +100,12 @@ class Resposta {
             desempenho = desempenho
 
             if (eval(resultado) == valores[i] && this.arrayResposta[i].operador == checkOperadores[i]) {
-                conferir.src = "/assets/right.png";
+                conferir.src = "../assets/right.png";
                 acerto = true
                 erro = false
 
             } else {
-                conferir.src = "/assets/wrong.png";
+                conferir.src = "../assets/wrong.png";
                 erro = true
                 acerto = false
             }
@@ -127,17 +127,17 @@ class Resposta {
             $("#btn1").attr("disabled", true)
             if (desempenho == valores.length) {
                 let badge = document.createElement("img")
-                badge.src= "/assets/passou.png"
+                badge.src= "../assets/passou.png"
                 $(".desempenho").append(badge);
                 console.log("você passou!")
             } else if (desempenho > -1 && desempenho < valores.length) {
                 let badge = document.createElement("img")
-                badge.src= "/assets/middle.png"
+                badge.src= "../assets/middle.png"
                 $(".desempenho").append(badge);
                 console.log("você chegou perto")
             } else {
                 let badge = document.createElement("img")
-                badge.src= "/assets/reprovar.png"
+                badge.src= "../assets/reprovar.png"
                 $(".desempenho").append(badge);
                 console.log("você reprovou")
             }

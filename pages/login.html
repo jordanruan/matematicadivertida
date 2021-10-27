@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="../css/formStyle.css">
     <script type="text/Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="../js/consultacepcpf.js" defer></script>
-    <script type="text/javascript" src="../js/scriptLetters.js" defer></script><script type="text/javascript" src="../js/cotacao.js" defer></script>
+    <script type="text/javascript" src="../js/scriptLetters.js" defer></script>
+    <script type="text/javascript" src="../js/cotacao.js" defer></script>
     <link rel="stylesheet" href="../css/responsiveIndex.css" />
 </head>
 
@@ -19,23 +20,23 @@
     <section class="menu">
         <nav class="navbar container">
             <div class="logo">
-                <div class="logo">
-                    <a href="#">
-                        <img src="../assets/logo.png" class="img-logo" />
-                    </a>
-                </div>
-                <ul class="site-navigation">
-                    <li class="nav-links"><a href="../index.html">Inicio</a></li>
-                    <li class="nav-links"><a href="./calc.html">Calculdora</a></li>
-                    <li class="nav-links"><a href="./exe.html">Exercicios</a></li>
-                    <div>
-                        <li class="nav-links">
-                            <a href="./login.html" class="btn-login">Cadastre-se</a>
-                        </li>
-                    </div>
-                </ul>
+                <a href="#">
+                    <img src="../assets/logo.png" class="img-logo" />
+                </a>
+
+            </div>
+            </a>
+            <ul class="site-navigation">
+                <li class="nav-links"><a href="../index.html">Inicio</a></li>
+                <li class="nav-links"><a href="./calc.html">Calculdora</a></li>
+                <li class="nav-links"><a href="./exe.html">Exercicios</a></li>
+                <li class="nav-links">
+                    <a href="./login.html" class="btn-login">Cadastre-se</a>
+                </li>
+            </ul>
         </nav>
     </section>
+
     <div id="confirmaCpf">
         <div id="caixaAviso">
             <p id="cabecalhoAviso">Aviso</p>
@@ -46,7 +47,7 @@
         <div class="card">
             <p>
                 <!-- Formulario de cadastro foi separado do formulario de pedido. Campos referentes ao endereço bloqueados para digitação, as dados são preenchidos automaticamente pelo CEP -->
-            <h3>Cadastro:</h3>
+                <h3>Cadastro:</h3>
             </p>
             <p>
                 <label for="nome">Nome: </label>
@@ -64,9 +65,9 @@
                 <label for="tel">Telefone: </label>
                 <input type="tel" id="tel" placeholder="Digite seu telefone">
             </p>
-            <p>                
-                <label for="date">Data de nascimento:</label>                
-                <input type="date" id="date"> 
+            <p>
+                <label for="date">Data de nascimento:</label>
+                <input type="date" id="date">
                 <label for="genero">Gênero</label>
                 <select name="genero" id="genero">
                     <option value=""></option>
@@ -78,7 +79,7 @@
                     <option value="Outros">Outros</option>
                 </select>
             </p>
-        
+
             <p><label for="cep">CEP:</label>
                 <input type="text" id="cep" maxlength="9" onblur="consultaCep();">
             </p>
@@ -120,58 +121,58 @@
             </p>
         </div>
     </form>
- <!-- Rodapé -->
- <section class="rodape">
-    <footer class="container">
-        <article>
-            <a href="#" class="logo-footer">
-                <img src="../assets/logo.png" class="img-logo" />
+    <!-- Rodapé -->
+    <section class="rodape">
+        <footer class="container">
+            <article>
+                <a href="#" class="logo-footer">
+                    <img src="../assets/logo.png" class="img-logo" />
 
-            </a>
-        </article>
-        <article>
-            <h3>Endereço</h3>
-            <p class="desc-footer">SoulCode BCW7 2021 ✨</p>
-        </article>
-        <article>
-            <h3>Redes Sociais</h3>
-            <ul class="navigation-footer">
-                <li>
-                    <a href="#" class="custom-icon">
-                        <img src="../assets/instagram (2).svg">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="custom-icon">
-                        <img src="../assets/facebook (3).svg">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="custom-icon">
-                        <img src="../assets/linkedin (1).svg">
-                    </a>
-                </li>
-            </ul>
-        </article>
-    </footer>
+                </a>
+            </article>
+            <article>
+                <h3>Endereço</h3>
+                <p class="desc-footer">SoulCode BCW7 2021 ✨</p>
+            </article>
+            <article>
+                <h3>Redes Sociais</h3>
+                <ul class="navigation-footer">
+                    <li>
+                        <a href="#" class="custom-icon">
+                            <img src="../assets/instagram (2).svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="custom-icon">
+                            <img src="../assets/facebook (3).svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="custom-icon">
+                            <img src="../assets/linkedin (1).svg">
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </footer>
 
 
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
         </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+    </section>
+    <div id="visionControl">
+        <img src="../assets/olho.png" id="visionPlus">
+        <img src="../assets/olhomenos.png" id="visionMinus">
+
     </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
-</section>
-<div id="visionControl">
-    <img src="../assets/olho.png" id="visionPlus">
-    <img src="../assets/olhomenos.png" id="visionMinus">
-    
-</div>
 
 </body>
 

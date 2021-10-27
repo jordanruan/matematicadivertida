@@ -241,6 +241,7 @@ class Resposta {
         }
         $("#btn1").text("Responder");
         this.testeBtn = 0;
+        this.id = 1;
         desempenho++;
          // Resultado final de acordo com o desempenho nas respostas
          $(".desempenho").text("")

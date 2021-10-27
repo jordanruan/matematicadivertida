@@ -20,14 +20,14 @@ class Resposta {
         this.testeBtn = 0;
     }
 
-    //salvar o produto digitado pelo usuário no objeto produto
+    //salvar a resposta digitada pelo usuário no objeto resposta
     salvar() {
-        //alert("vamos salvar");
+        
         let resposta = this.lerDados();
 
         //chamamos o método para validar o conteúdo dos inputs (somente verificou inputs vazios)
         if (this.validarCampos(resposta)) {
-            //alert("Podemos salvar");
+           
             if (this.testeBtn == 0) {
                 this.adicionar(resposta);
             } else {
@@ -38,9 +38,9 @@ class Resposta {
         }
         console.log(this.arrayResposta);
 
-        //this.cancelar();
+        
     }
-    //método para alimentar a tabela com os produtos
+    //método para alimentar a tabela com os valores digitados
     listaDados() {
         // declaração de uma variável para referenciar o tbody da tabela
         let tbody = document.getElementById("tbody");
@@ -48,7 +48,7 @@ class Resposta {
         // limpar a tabela antes de ser mostrada 
         tbody.innerText = "";
 
-        //loop para percorrer o array de Produtos
+        //loop para percorrer o array de Resposta
         for (let i = 0; i < this.arrayResposta.length; i++) {
             // inserir um nova linha no tbody
             let novaLinha = tbody.insertRow();
@@ -67,6 +67,7 @@ class Resposta {
             $(td_operador).text(this.arrayResposta[i].operador).addClass("center")
             $(td_inputDois).text(this.arrayResposta[i].inputDois).addClass("center")
             let resultado = this.arrayResposta[i].inputUm + this.arrayResposta[i].operador + this.arrayResposta[i].inputDois
+            //a função eval realiza todas as operações entre o inputUm, operador e inputDois
             $(td_resultado).text(eval(resultado)).addClass("center")                      
 
 
@@ -87,11 +88,12 @@ class Resposta {
             //atribuir um método para imgDelete através do setAttribute como os parâmetros: ("evento", método)
             imgDelete.setAttribute("onclick", "resposta.deletar(" + this.arrayResposta[i].id + ")");
 
-            //atribuir um método para mostrar os dados do produto selecionado para posterior edição (evento, método)
+            //atribuir um método para mostrar os dados de resposta selecionado para posterior edição (evento, método)
             imgEdit.setAttribute("onclick", "resposta.mostrarDados(" + JSON.stringify(this.arrayResposta[i]) + ")");
 
             
-            // adição das imagens de acordo com a resposta do formulario.
+           //criamos um elemento img que conterá o desemprenho da pessoa
+
             let conferir = document.createElement("img");
 
             $("#grid" + i).text("")
@@ -111,17 +113,28 @@ class Resposta {
             }
                         
         }
+
+
+
         // controle para resultado final
+
         if (acerto){            
             desempenho++
             console.log(desempenho)
 
-        } else if (erro) {            
+        } else if(erro) {            
             desempenho--
+
+            console.log(desempenho)
+        }   
+        
+
+
             console.log(desempenho) 
             
         }
         // Resultado final de acordo com o desempenho nas respostas
+
         $(".desempenho").text("")
         if (this.arrayResposta.length == valores.length) {
             $("#btn1").attr("disabled", true)
@@ -190,8 +203,11 @@ class Resposta {
     }
 // metodo para deletar buscando pelo id escolhido
     deletar(idProcurado) {
+        
+        if (confirm("Deseja realmente deletar a resposta de id " + idProcurado)) {
+
        
-        if (confirm("Deseja realmente deletar o produto de id " + idProcurado)) {
+
             for (let i = 0; i < this.arrayResposta.length; i++) {
                 if (this.arrayResposta[i].id == idProcurado) {
                     this.arrayResposta.splice(i, 1);
@@ -203,10 +219,10 @@ class Resposta {
     }
 
     mostrarDados(dados) {
-        //alert(dados.id);
+        
         $("#btn1").attr("disabled", false)
 
-        //mostrar as propriedades dos produtos nos inputs
+        //mostrar as propriedades das respostas nos inputs
         $("#inputUm").val(dados.inputUm);
         $("#operador").val(dados.operador);
         $("#inputDois").val(dados.inputDois);
@@ -219,6 +235,7 @@ class Resposta {
     }
 
     atualizar(id) {
+       
         
         for (let i = 0; i < this.arrayResposta.length; i++) {
             if (id == this.arrayResposta[i].id) {

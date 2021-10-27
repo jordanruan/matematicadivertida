@@ -207,6 +207,7 @@ class Resposta {
         $("#tbody").text("")
         this.arrayResposta = [];
         desempenho = 0
+        $("#btn1").attr("disabled", false)
         let i = 0;
         for(i = 0; i < valores.length; i++){
             $("#grid" + i).text("")
@@ -241,6 +242,28 @@ class Resposta {
         $("#btn1").text("Responder");
         this.testeBtn = 0;
         desempenho++;
+         // Resultado final de acordo com o desempenho nas respostas
+         $(".desempenho").text("")
+         if (this.arrayResposta.length == valores.length) {
+             $("#btn1").attr("disabled", true)
+             if (desempenho == valores.length) {
+                 let badge = document.createElement("img")
+                 badge.src= "../assets/passou.png"
+                 $(".desempenho").append(badge);
+                 console.log("você passou!")
+             } else if (desempenho > -1 && desempenho < valores.length) {
+                 let badge = document.createElement("img")
+                 badge.src= "../assets/middle.png"
+                 $(".desempenho").append(badge);
+                 console.log("você chegou perto")
+             } else {
+                 let badge = document.createElement("img")
+                 badge.src= "../assets/reprovar.png"
+                 $(".desempenho").append(badge);
+                 console.log("você reprovou")
+             }
+         }
+         console.log(desempenho)
     }
 
 }

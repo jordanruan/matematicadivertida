@@ -38,10 +38,10 @@
     </section>
 <!-- Div que traz a confirmação do CPF, foi reaproveitada para trazer as informações após o fim do cadastro-->
     <div id="confirmaCpf">
-        <div id="caixaAviso">
-            <p id="cabecalhoAviso">Aviso</p>
+        <div id="cabecalhoAviso" onclick="fecharJanela()">OK - Fecha a Janela
         </div>
-        <button id="botaoFechar" onclick="fecharJanela()">OK - Fecha a Janela</button>
+        <p id="caixaAviso"></p>
+        
     </div>
     <form method="POST" action="" name="cadastro" onsubmit="event.preventDefault(); enviardados();">
         <div class="card">

@@ -6,12 +6,12 @@ $('#date').blur(function () {
     var dataMax = '2021-03-16';
     var dataMin = '1981-03-16';
     if (dataDigitada >= dataMax) {
-        $('#cabecalhoAviso').text("Você é muito novo para estar aqui");
+        $('#caixaAviso').text("Você é muito novo para estar aqui");
         $('#confirmaCpf').css({ display: "block" });
         $('#date').val('');
         return false;
     } else if (dataDigitada <= dataMin) {
-        $('#cabecalhoAviso').text("Você é um vampiro?");
+        $('#caixaAviso').text("Você é um vampiro?");
         $('#confirmaCpf').css({ display: "block" });
         $('#date').val('');
         return false;
@@ -85,7 +85,7 @@ function enviardados() {
     console.log(formDados);
     console.log(salvarDados);
     alert("Dados Enviados")
-    $('#cabecalhoAviso').text('Olá ' + cadastro.nome.value + " o seu login é: " + cadastro.email.value + " e você pode usar " + cadastro.cpf.value + " como senha "),
+    $('#caixaAviso').text('Olá ' + cadastro.nome.value + " o seu login é: " + cadastro.email.value + " e você pode usar " + cadastro.cpf.value + " como senha "),
         $('#confirmaCpf').css({ display: "block" });
     $('#botaoFechar').css({ marginTop: "60px" });
 }
@@ -118,7 +118,7 @@ function consultaCep() {
 function VerificaCPF() {
     if (vercpf(document.cadastro.cpf.value)) { document.cadastro } else {
         errors = "1"; if (errors) {
-            $('#cabecalhoAviso').text('CPF NÃO VÁLIDO'),
+            $('#caixaAviso').text('CPF NÃO VÁLIDO'),
             $('#confirmaCpf').css({ display: "block" })
         };
         $('#botaoFechar').css({ marginTop: "120px" });
@@ -146,7 +146,7 @@ function vercpf(cpf) {
         rev = 0;
     if (rev != parseInt(cpf.charAt(10)))
         return false;
-    $('#cabecalhoAviso').text('O CPF INFORMADO É VÁLIDO.'),
+    $('#caixaAviso').text('O CPF INFORMADO É VÁLIDO.'),
         $('#confirmaCpf').css({ display: "block" });
     $('#botaoFechar').css({ marginTop: "120px" });
     return true;

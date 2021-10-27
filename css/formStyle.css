@@ -58,7 +58,7 @@ h1, h2, h3 {
     margin: auto;
     justify-content: center;
 }
-
+/* Configurações para a caixa de aviso */
 #confirmaCpf{
     display: none;
     width: 500px;

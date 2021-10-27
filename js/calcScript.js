@@ -4,7 +4,7 @@ function inserirNumero(item) {
 	let valorAtual = $('.tela').val();
 	// o valor digitado é adicionado ao valor que já estava na tela
 	let digitado = valorAtual.length;
-	// primeiro controle inicia como falso, se o valor recebe um operador matematico ele se torna true
+	// primeiro controle inicia como falso, se o valor recebe um operador matematico ele se torna true. Com certeza foi a parte que deu mais trabalho pra fazer. Pode remover a Checagem do + e do - no inicio pra trabalhar com conta de numeros negativos, porem tem o risco de quebra o funcionamento, então deixei a checagem dos 4 operadores. o Uso do EVAL com certeza fez muita diferença e diminuiu o trabalho.
 	let controle = false;
 	if (item == '+' || item == '-' || item == '*' || item == '/')
 		controle = true;
@@ -13,7 +13,7 @@ function inserirNumero(item) {
 		if (controle)
 			return;
 	}
-	// segundo controle confere a ultima posição se ela for um operador matematico e tentar adicionar um segundo operador, ele subescreve o mesmo, se for um numero ele é adicionado
+	// segundo controle confere a ultima posição se ela for um operador matematico e tentar adicionar um segundo operador, ele subescreve o mesmo, se for um numero ele é adicionado. 
 	let controleNovo = false;
 	let ultimoDigitado = valorAtual[digitado - 1];
 	if (ultimoDigitado == '+' || ultimoDigitado == '-' || ultimoDigitado == '*' || ultimoDigitado == '/')
@@ -88,7 +88,7 @@ function elevado2() {
 		// eval avalia o valorAtual e faz a conta acontecer (gostei muito de conhecer isso!)
 		$('.tela').val(Math.pow($('.tela').val(), 3));
 }
-// Contre para alternancia entre a calculadora comum e a cientifica. No primeiro passo o IF confere o botão e tirar o disabled deles. No segundo momento faz o caminho inverso e volta o disabled para os botões que são da calculadora cientifica. A função tambem altera o texto da DIV acima mostrando qual das funções esta ativa no momento.
+// Controle para alternancia entre a calculadora comum e a cientifica. No primeiro passo o IF confere o botão e tirar o disabled deles. No segundo momento faz o caminho inverso e volta o disabled para os botões que são da calculadora cientifica. A função tambem altera o texto da DIV acima mostrando qual das funções esta ativa no momento.
 $('#switch-shadow').click(function () {
 	if ($("#switch-shadow").is(":checked")) {
 		$("#switchText").text("Científica")

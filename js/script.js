@@ -1,3 +1,4 @@
+// variaveis para controle das respostas.
 var valores = ["8", "13", "36", "2"]
 
 var checkOperadores = ["+", "-", "*", "/"]
@@ -90,7 +91,7 @@ class Resposta {
             imgEdit.setAttribute("onclick", "resposta.mostrarDados(" + JSON.stringify(this.arrayResposta[i]) + ")");
 
             
-
+            // adição das imagens de acordo com a resposta do formulario.
             let conferir = document.createElement("img");
 
             $("#grid" + i).text("")
@@ -110,6 +111,7 @@ class Resposta {
             }
                         
         }
+        // controle para resultado final
         if (acerto){            
             desempenho++
             console.log(desempenho)
@@ -119,6 +121,7 @@ class Resposta {
             console.log(desempenho) 
             
         }
+        // Resultado final de acordo com o desempenho nas respostas
         $(".desempenho").text("")
         if (this.arrayResposta.length == valores.length) {
             $("#btn1").attr("disabled", true)
@@ -142,6 +145,7 @@ class Resposta {
         
 
     }
+    //adcição das respostas no array
     adicionar(resposta) {
         this.arrayResposta.push(resposta);
         this.id++;
@@ -184,9 +188,9 @@ class Resposta {
         }
         return true;
     }
-
+// metodo para deletar buscando pelo id escolhido
     deletar(idProcurado) {
-        //alert("Vamos deletar o produto de id: " + idProcurado);
+       
         if (confirm("Deseja realmente deletar o produto de id " + idProcurado)) {
             for (let i = 0; i < this.arrayResposta.length; i++) {
                 if (this.arrayResposta[i].id == idProcurado) {
@@ -194,8 +198,7 @@ class Resposta {
                     tbody.deleteRow(i);
                 }
             }
-            // this.arrayProdutos.splice(idProcurado,1);
-            // this.listaDados();
+            
         }
     }
 
@@ -216,7 +219,7 @@ class Resposta {
     }
 
     atualizar(id) {
-        //alert("Agora vamos atualizar");
+        
         for (let i = 0; i < this.arrayResposta.length; i++) {
             if (id == this.arrayResposta[i].id) {
                 this.arrayResposta[i].inputUm = $("#inputUm").val();

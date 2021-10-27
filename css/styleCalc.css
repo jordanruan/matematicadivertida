@@ -1,3 +1,4 @@
+/* configurações gerais */
 * {
 	margin: 0;
 	padding: 0;
@@ -19,7 +20,7 @@ main {
 	justify-content: center;
 	align-items: center;
 }
-
+/* Estilos para a api de cotação */
 #cotacao {
 
 	font-size: 300%;
@@ -41,7 +42,7 @@ main {
 	height: 2vw;
 	width: 14vw;
 }
-
+/* Estilos para a calculadora */
 .calculator {
 	width: 245px;
 	margin: auto;
@@ -62,7 +63,7 @@ main {
 #c1 {
 	background-color: #ED4343;
 }
-
+/* Estilos para os botões da calculadora, alguns tratados individualmente*/
 input[type=button] {
 	width: 40px;
 	height: 40px;
@@ -76,12 +77,13 @@ input[type=button] {
 	height: 79px;
 	background-color: #0e9e09;
 	width: 87px;
+	
 }
 
 #numero0 {
 	width: 85px;
 }
-
+/* Serie de controles para permitir o efeito do switch, controlar o movimento e a mudança de cor do mesmo */
 .switch__container {
 	margin: 30px auto;
 	width: 70px;

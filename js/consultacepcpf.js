@@ -106,7 +106,7 @@ function consultaCep() {
         cepDigitado.style.border = "1px solid red";
     } else {
         let cepProcurado = cepDigitado.value.replace("-", "");
-        fetch(`http://viacep.com.br/ws/${cepProcurado}/json/`)
+        fetch(`https://viacep.com.br/ws/${cepProcurado}/json/`)
             .then(response => {
                 response.json()
                     .then(data => console.log(apresentaDados(data)))

@@ -201,6 +201,17 @@ class Resposta {
             
         }
     }
+    reiniciar(){
+        
+        $(".desempenho").text("")
+        $("#tbody").text("")
+        this.arrayResposta = [];
+        desempenho = 0
+        let i = 0;
+        for(i = 0; i < valores.length; i++){
+            $("#grid" + i).text("")
+        }
+    }
 
     mostrarDados(dados) {
         //alert(dados.id);

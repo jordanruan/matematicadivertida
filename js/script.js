@@ -207,6 +207,7 @@ class Resposta {
         $("#tbody").text("")
         this.arrayResposta = [];
         desempenho = 0
+        this.id = 1;
         $("#btn1").attr("disabled", false)
         let i = 0;
         for(i = 0; i < valores.length; i++){
@@ -241,7 +242,6 @@ class Resposta {
         }
         $("#btn1").text("Responder");
         this.testeBtn = 0;
-        this.id = 1;
         desempenho++;
          // Resultado final de acordo com o desempenho nas respostas
          $(".desempenho").text("")

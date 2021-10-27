@@ -207,6 +207,7 @@ class Resposta {
         $("#tbody").text("")
         this.arrayResposta = [];
         desempenho = 0
+        this.id = 1;
         $("#btn1").attr("disabled", false)
         let i = 0;
         for(i = 0; i < valores.length; i++){

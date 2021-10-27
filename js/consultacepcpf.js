@@ -1,7 +1,7 @@
 // constr Salvardados para armazenar as informações digitas.
 const salvarDados = [];
 // função para controle da data, mantando a data entre os valores selecionados
-$('#date').change(function () {
+$('#date').blur(function () {
     var dataDigitada = document.getElementById('date').value;
     var dataMax = '2021-03-16';
     var dataMin = '1981-03-16';

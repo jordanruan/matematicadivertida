@@ -1,4 +1,5 @@
 /* Estilos para o Card externo */
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 40%;
@@ -8,7 +9,9 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+
 /* Estilos para os todos os tipos de input dos forms */
+
 input {
     width: 100%;
     padding: 12px 20px;
@@ -33,7 +36,9 @@ textarea {
     background-color: white;
     resize: none;
 }
+
 /* Estilos para os botões */
+
 button[type=submit], button[type=reset] {
     background-color: #ED4343;
     border: none;
@@ -50,49 +55,68 @@ label {
     font-weight: bolder;
     font-size: 100%;
 }
+
 h1, h2, h3 {
     color: #ED4343;
 }
-#pButton{    
+
+#pButton {
     display: flex;
     margin: auto;
     justify-content: center;
 }
+
 /* Configurações para a caixa de aviso */
-#confirmaCpf{
+
+#confirmaCpf {
     display: none;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    bottom: 50%;
     width: 500px;
-    height: 150px;
-    background-color:#ffffff;
-    position: absolute;
+    height: 500px;
+    background-color: #E9EAEC;
+    position: fixed;
     margin: auto;
-    border: double;
-    border-radius: 5px;
+    box-sizing: border-box;
+    border: 2px solid #ED4343;
+    border-width: 2px;
     box-sizing: border-box;
 }
-#cabecalhoAviso{  
-    color: #000;
-    margin-top: 0;  
-    float: left;
+
+#cabecalhoAviso {
+    width: 100%;
+    height: 4vw;
+    margin-top: 0;
+    background-color: #ED4343;
+    text-align: center;
+    font-size: 2vw;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
 }
-#caixaAviso{
-    background-color: #ffffff;
-}
-#botaoFechar{
-    float: right;
-    border-radius: 5px;
-    background-color: black;
-    color: #ffffff;
-    margin-right: 2px;
-    margin-bottom: 0;
-    margin-top: 120px;
-    z-index: 2;    
+
+#caixaAviso {
+    margin-left: 1vw;
+    margin-top: 5vw;
+    width: 100%;
+    height: 100%;
+    font-family: Lucida Handwriting;
+    box-sizing: border-box;
     
 }
+
+#botaoFechar {
+    margin-top: 0;
+    border-radius: 5px;
+    background-color: #ED4343;
+    color: #ffffff;
+}
+
 @media (max-width: 1160px) {
     .card {
-       
         width: 98%;
-      
     }
 }
